@@ -1,0 +1,50 @@
+/* Footer Styles */
+.footer {
+    background-color: #f39c12; 
+    color: #04111C;
+    text-align: center;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-text {
+    font-weight:100px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+
+  .footer-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-icons a {
+    color: #04111C;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .footer-icons a:hover {
+    color: #fff; 
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer-text {
+      font-size: 12px;
+    }
+  
+    .footer-icons a {
+      font-size: 18px;
+    }
+  }
+  

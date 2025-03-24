@@ -1,0 +1,112 @@
+.tools-technologies {
+    text-align: center;
+    padding: 50px 5%;
+    background-color: #04111C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #f39c12;
+}
+
+/* Grid Container */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Grids */
+.grid {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.8));
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Scrolling Wrapper */
+.scrolling-wrapper {
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Reverse Scroll */
+.scrolling-wrapper.reverse .grid-items {
+    animation-direction: reverse;
+}
+
+/* Grid Items (Two Sets of Logos) */
+.grid-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: fit-content; 
+    animation: scroll 15s linear infinite;
+}
+
+/* Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Grid Headings */
+.grid h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #04111C;
+    font-weight: bold;
+}
+
+/* Individual Logos */
+.grid-items img {
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.grid-items img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+
+    .grid {
+        width: 90%;
+        max-width: 400px;
+    }
+}

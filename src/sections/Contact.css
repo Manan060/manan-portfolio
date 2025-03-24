@@ -1,0 +1,171 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #04111C;
+    padding: 60px 20px;
+}
+
+/* Contact Title */
+.contact-title {
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f39c12;
+    position: relative;
+}
+
+/* Container */
+.contact-container {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    gap: 80px; 
+    flex-wrap: wrap;
+}
+
+/* Spline Model */
+.spline-container {
+    flex: 1;
+    max-width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.spline-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+}
+
+/* Contact Form */
+form {
+    flex: 1;
+    max-width: 450px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.8));
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #04111C;
+    width: 100%;
+}
+
+/* Input Fields */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: #04111C;
+    margin-bottom: 5px;
+}
+
+.input-box .field {
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #04111C;
+    outline: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    color: #04111C;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-box .field:focus {
+    border-color: #f39c12;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Textarea */
+.input-box .field.mess {
+    height: 150px;
+    resize: none;
+}
+
+/* Button */
+form button {
+    width: 100%;
+    height: 50px;
+    background: #f39c12;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #04111C;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #ffffff;
+    color: #04111C;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .spline-container {
+        max-width: 90%;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 36px; 
+    }
+
+    .spline-container {
+        max-width: 100%;
+    }
+
+    form {
+        max-width: 95%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .spline-container {
+        max-width: 100%;
+    }
+
+    form {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    form button {
+        font-size: 16px;
+        height: 45px;
+    }
+}

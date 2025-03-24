@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Projects Section */
+.bg_projects {
+    background-color: #04111C;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+/* Section Container */
+.projects_container {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Section Heading */
+.projects_container h1 {
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f39c12;
+}
+
+/* Project Cards Layout */
+.project_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Individual Card Styling */
+.project_card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.8));
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid transparent;
+    color: #04111C;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    min-height: 400px; 
+}
+
+/* Hover Effect */
+.project_card:hover {
+    border-color: #f39c12;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Card Title */
+.project_card h3 {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Project Image */
+.project_img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.project_card p {
+    font-size: 16px;
+    flex-grow: 1; 
+}
+
+/* GitHub Button (Text & Icon Only) */
+.github_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto; 
+    text-decoration: none;
+    font-weight: bold;
+    color: #04111C;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.github_link:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 969px) {
+    .projects_container h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .project_card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects_container h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .project_card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
