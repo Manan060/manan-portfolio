@@ -3,28 +3,28 @@ import { motion } from "framer-motion";
 import "./ToolsTechnologies.css";
 
 
-import canvaLogo from "../public/assets/tools&tech/canva-logo.png";
-import cssLogo from "../public/assets/tools&tech/css3-original-wordmark.svg";
-import djangoLogo from "../public/assets/tools&tech/django.svg";
-import figmaLogo from "../public/assets/tools&tech/figma.png";
-import googleColabLogo from "../public/assets/tools&tech/GoogleColab_Logo.png";
-import hfLogo from "../public/assets/tools&tech/hf.png";
-import htmlLogo from "../public/assets/tools&tech/html-5.svg";
-import jsLogo from "../public/assets/tools&tech/js-official.svg";
-import jupyterLogo from "../public/assets/tools&tech/jupyter.svg";
-import langchainLogo from "../public/assets/tools&tech/lang-chain.svg";
-import matplotlibLogo from "../public/assets/tools&tech/matplotlib.png";
-import mysqlLogo from "../public/assets/tools&tech/mysql-original-wordmark.svg";
-import nodejsLogo from "../public/assets/tools&tech/nodejs.svg";
-import numpyLogo from "../public/assets/tools&tech/NumPy.svg";
-import pandasLogo from "../public/assets/tools&tech/pandas.png";
-import postgresqlLogo from "../public/assets/tools&tech/postgresql.svg";
-import pythonLogo from "../public/assets/tools&tech/python-original.svg";
-import pytorchLogo from "../public/assets/tools&tech/PyTorch_logo.svg";
-import reactLogo from "../public/assets/tools&tech/react.svg";
-import scikitLearnLogo from "../public/assets/tools&tech/scikit-learn-logo.svg";
-import sqliteLogo from "../public/assets/tools&tech/sqlite.svg";
-import tensorflowLogo from "../public/assets/tools&tech/TensorFlow_logo.svg";
+import canvaLogo from "../assets/tools&tech/canva-logo.png";
+import cssLogo from "../assets/tools&tech/css3-original-wordmark.svg";
+import djangoLogo from "../assets/tools&tech/django.svg";
+import figmaLogo from "../assets/tools&tech/figma.png";
+import googleColabLogo from "../assets/tools&tech/GoogleColab_Logo.png";
+import hfLogo from "../assets/tools&tech/hf.png";
+import htmlLogo from "../assets/tools&tech/html-5.svg";
+import jsLogo from "../assets/tools&tech/js-official.svg";
+import jupyterLogo from "../assets/tools&tech/jupyter.svg";
+import langchainLogo from "../assets/tools&tech/lang-chain.svg";
+import matplotlibLogo from "../assets/tools&tech/matplotlib.png";
+import mysqlLogo from "../assets/tools&tech/mysql-original-wordmark.svg";
+import nodejsLogo from "../assets/tools&tech/nodejs.svg";
+import numpyLogo from "../assets/tools&tech/NumPy.svg";
+import pandasLogo from "../assets/tools&tech/pandas.png";
+import postgresqlLogo from "../assets/tools&tech/postgresql.svg";
+import pythonLogo from "../assets/tools&tech/python-original.svg";
+import pytorchLogo from "../assets/tools&tech/PyTorch_logo.svg";
+import reactLogo from "../assets/tools&tech/react.svg";
+import scikitLearnLogo from "../assets/tools&tech/scikit-learn-logo.svg";
+import sqliteLogo from "../assets/tools&tech/sqlite.svg";
+import tensorflowLogo from "../assets/tools&tech/TensorFlow_logo.svg";
 
 const fullstackLogos = [
   htmlLogo, cssLogo, jsLogo, reactLogo, nodejsLogo, djangoLogo,

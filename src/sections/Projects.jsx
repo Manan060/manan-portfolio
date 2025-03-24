@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
+import qr_img from "../assets/projects_img/qr.png"
+import quora_img from "../assets/projects_img/q-a.png"
+import movie_img from "../assets/projects_img/movie_recommender.png"
+import dds_img from "../assets/projects_img/dds.png"
+import cms_img from "../assets/projects_img/cms.png"
+import bms_img from "../assets/projects_img/bms.png"
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -8,43 +14,42 @@ import "./Projects.css";
 
 const projects = [
   {
-    projectImg: `${process.env.PUBLIC_URL}/assets/projects_img/qr.png`,
+    projectImg: qr_img,
     projectName: "QR-Code-Feedback-System (for Gujarat Police)",
     description: "A QR-based feedback system designed for Gujarat Police, enabling citizens to provide quick and structured feedback on services.",
     githubUrl: "https://github.com/Manan060/QR-Code-Feedback-System",
   },
   {
-    projectImg: `${process.env.PUBLIC_URL}/assets/projects_img/q-a.png`,
+    projectImg: quora_img,
     projectName: "Charusat Quora",
     description: "A Q&A platform for Charusat University students to ask, answer, and engage in academic discussions.",
     githubUrl: "https://github.com/Manan060/Q-A-Website",
   },
   {
-    projectImg: `${process.env.PUBLIC_URL}/assets/projects_img/movie_recommender.png`,
+    projectImg: movie_img,
     projectName: "Movie Recommender System",
     description: "A recommendation system that suggests movies based on user preferences and viewing history using ML algorithms.",
     githubUrl: "https://github.com/Manan060/Movie-Recommender-System",
   },
   {
-    projectImg: `${process.env.PUBLIC_URL}/assets/projects_img/dds.png`,
+    projectImg: dds_img,
     projectName: "Driver Drowsiness Detection",
     description: "An AI-based system that detects driver fatigue in real-time using facial recognition and alerts to prevent accidents.",
     githubUrl: "https://github.com/Manan060/Driver-Drowsiness-Detection",
   },
   {
-    projectImg: `${process.env.PUBLIC_URL}/assets/projects_img/cms.png`,
+    projectImg: cms_img,
     projectName: "Clinic Management System",
     description: "A web-based system for clinics to manage patient records, appointments, and doctor schedules efficiently.",
     githubUrl: "https://github.com/Manan060/Clinic-Management-System",
   },
   {
-    projectImg: `${process.env.PUBLIC_URL}/assets/projects_img/bms.png`,
+    projectImg: bms_img,
     projectName: "Delta (Blood Bank Management System)",
     description: "A platform for blood banks to manage donors, inventory, and requests, ensuring efficient blood distribution.",
     githubUrl: "https://github.com/Manan060/Delta",
   },
 ];
-
 
 
 const Projects = () => {
