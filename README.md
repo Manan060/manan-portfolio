@@ -1,3 +1,3 @@
-# welcome to my Portfolio Website
+# Welcome to my Portfolio Website
 
 https://manan060.github.io/manan-portfolio/
