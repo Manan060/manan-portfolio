@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Manan060.github.io/manan-portfolio",
   "name": "portfolio-project",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@splinetool/react-spline": "^4.0.0",
