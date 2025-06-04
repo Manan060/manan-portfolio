@@ -6,7 +6,7 @@ import quora_img from "../assets/projects_img/q-a.png"
 import movie_img from "../assets/projects_img/movie_recommender.png"
 import dds_img from "../assets/projects_img/dds.png"
 import cms_img from "../assets/projects_img/cms.png"
-import bms_img from "../assets/projects_img/bms.png"
+import x_img from "../assets/projects_img/xLogo.png"
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -44,10 +44,10 @@ const projects = [
     githubUrl: "https://github.com/Manan060/Clinic-Management-System",
   },
   {
-    projectImg: bms_img,
-    projectName: "Delta (Blood Bank Management System)",
-    description: "A platform for blood banks to manage donors, inventory, and requests, ensuring efficient blood distribution.",
-    githubUrl: "https://github.com/Manan060/Delta",
+    projectImg: x_img,
+    projectName: "ChatX",
+    description: "A Professional networking Platform",
+    githubUrl: "https://github.com/Manan060/chatX",
   },
 ];
 
